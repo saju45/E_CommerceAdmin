@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.alOrder.setOnClickListener {
-            binding.layout1.visibility=ConstraintLayout.GONE
+          //  binding.layout1.visibility=ConstraintLayout.GONE
             startActivity(Intent(this,AllOrderActivity::class.java))
         }
     }

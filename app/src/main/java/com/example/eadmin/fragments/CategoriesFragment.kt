@@ -70,7 +70,6 @@ class CategoriesFragment : Fragment() {
 
     private fun validateData(name:String) {
 
-
         if (name.isEmpty()){
 
             binding.categoryName.error="please provide category name"
@@ -128,7 +127,6 @@ class CategoriesFragment : Fragment() {
         }.addOnFailureListener{
             dialog.dismiss()
             Toast.makeText(requireContext(), "something is wrong", Toast.LENGTH_SHORT).show()
-
         }
 
     }
@@ -147,7 +145,6 @@ class CategoriesFragment : Fragment() {
                 }
 
                 binding.categoriesRv.adapter=CategoryAdapter(requireContext(),list)
-
 
             }.addOnFailureListener {
 
